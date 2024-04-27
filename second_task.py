@@ -18,7 +18,7 @@ def get_cats_info(file_path) -> list:
                 info_dict = []
                 for info_cats in file:
                     id_info, name_info, age_info = info_cats.split(",")
-                    info_dict.append({"id": id_info, "name": name_info, "age": age_info})
+                    info_dict.append({"id": id_info, "name": name_info, "age": int(age_info)})
 
         return (info_dict)
     
